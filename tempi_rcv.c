@@ -2,19 +2,16 @@
 #include <stdio.h>
 
 #define OUT
-#define VCC
 #define INTERCHANGE_FILE
 
 int main()
 {
 	if(wiringPiSetup()) return 1;
 	pinMode(OUT, INPUT);
-	pinMode(VCC, OUTPUT);
 	char data[9];
 	int i = 0;
 	while(1)
 	{
-		digitalWrite(VCC, 1);
 		for(i = 0; i < 9; i++)
 		{
 			data[i] = 0;
