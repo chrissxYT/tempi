@@ -1,8 +1,6 @@
 #include <wiringPi.h>
 #include <stdio.h>
-
-#define OUT
-#define INTERCHANGE_FILE
+#include "config.h"
 
 int main()
 {

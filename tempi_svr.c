@@ -3,10 +3,7 @@
 #include <stdlib.h>
 #include <sys/stat.h>
 #include <sys/types.h>
-
-#define INTERCHANGE_FILE
-#define TEMPLATE_FILE
-#define QUARK_ROOT
+#include "config.h"
 
 #define QUARK_INDEX QUARK_ROOT"/index.html"
 #define QUARK_RAW QUARK_ROOT"/raw"
