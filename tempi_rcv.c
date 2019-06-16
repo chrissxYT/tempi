@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 #define OUT
-#define GND
 #define VCC
 #define INTERCHANGE_FILE
 
@@ -10,7 +9,6 @@ int main()
 {
 	if(wiringPiSetup()) return 1;
 	pinMode(OUT, INPUT);
-	pinMode(GND, INPUT);
 	pinMode(VCC, OUTPUT);
 	char data[9];
 	int i = 0;
